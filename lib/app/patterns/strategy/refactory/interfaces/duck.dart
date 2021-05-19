@@ -5,8 +5,6 @@ abstract class Duck {
   FlyBehavior flyBehavior;
   QuackBehavior quackBehavior;
 
-  // Duck(this.flyBehavior, this.quackBehavior);
-
   void setFlyBehavior(FlyBehavior fb) {
     flyBehavior = fb;
   }
