@@ -1,4 +1,7 @@
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/behavior/fly_no_way.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/behavior/fly_rocket_powered.dart';
 import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/behavior/squeak.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/ducks/model_duck.dart';
 import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/ducks/redhead_duck.dart';
 import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/interfaces/duck.dart';
 import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/behavior/fly_with_wings.dart';
@@ -12,9 +15,6 @@ void main() {
   group('03 - Duck:', () {
     test('Testar MallardDuck', () {
       Duck duck = MallardDuck();
-      duck.setFlyBehavior(FlyWithWings());
-      duck.setQuackBehavior(Quack());
-
       expect(duck.performFly(), 'Patos voando');
       expect(duck.performQuack(), 'grasnar');
       expect(duck.swim(), 'nadar');
@@ -23,15 +23,27 @@ void main() {
 
     test('Testar RedHeadDuck', () {
       Duck duck = RedHeadDuck();
-      duck.setFlyBehavior(FlyWithWings());
-      duck.setQuackBehavior(Squeak());
-
       expect(duck.performFly(), 'Patos voando');
       expect(duck.performQuack(), 'guinchar');
       expect(duck.swim(), 'nadar');
       expect(duck.display(), equals('Parece um cabeça vermelha!'));
+
       duck.setQuackBehavior(Quack());
       expect(duck.performQuack(), 'grasnar');
+    });
+
+    test('Testar ModelDuck', () {
+      Duck duck = ModelDuck();
+      expect(duck.performFly(), 'Patos voando');
+      expect(duck.performQuack(), 'grasnar');
+      expect(duck.swim(), 'nadar');
+      expect(duck.display(), equals('Eu sou um ModelDuck!'));
+
+      duck.setFlyBehavior(FlyNoWay());
+      expect(duck.performFly(), 'Não posso voar!');
+
+      duck.setFlyBehavior(FlyRocketPowered());
+      expect(duck.performFly(), 'Voa como um foguete!');
     });
   });
 }
