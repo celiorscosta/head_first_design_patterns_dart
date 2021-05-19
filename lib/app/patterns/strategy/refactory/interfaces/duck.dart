@@ -2,10 +2,18 @@ import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/
 import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/interfaces/quack_behavior.dart';
 
 abstract class Duck {
-  final FlyBehavior flyBehavior;
-  final QuackBehavior quackBehavior;
+  FlyBehavior flyBehavior;
+  QuackBehavior quackBehavior;
 
-  Duck(this.flyBehavior, this.quackBehavior);
+  // Duck(this.flyBehavior, this.quackBehavior);
+
+  void setFlyBehavior(FlyBehavior fb) {
+    flyBehavior = fb;
+  }
+
+  void setQuackBehavior(QuackBehavior qb) {
+    quackBehavior = qb;
+  }
 
   String performQuack() {
     return quackBehavior.quack();

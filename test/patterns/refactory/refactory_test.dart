@@ -9,10 +9,9 @@ void main() {
 
   group('03 - Duck:', () {
     test('Testar MallardDuck', () {
-      Duck duck = MallardDuck(
-        flyBehavior: FlyWithWings(),
-        quackBehavior: Quack(),
-      );
+      Duck duck = MallardDuck();
+      duck.setFlyBehavior(FlyWithWings());
+      duck.setQuackBehavior(Quack());
       print(duck.performFly());
       print(duck.performQuack());
       print(duck.swim());
