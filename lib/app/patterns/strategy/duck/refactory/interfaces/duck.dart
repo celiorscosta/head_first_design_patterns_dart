@@ -25,5 +25,5 @@ abstract class Duck {
     return 'nadar';
   }
 
-  String display() {}
+  String display();
 }
