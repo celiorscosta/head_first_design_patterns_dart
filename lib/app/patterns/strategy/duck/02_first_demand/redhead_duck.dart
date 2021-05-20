@@ -1,4 +1,4 @@
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/02_first_demand/duck.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/02_first_demand/duck.dart';
 
 class RedHeadDuck extends Duck {
   @override

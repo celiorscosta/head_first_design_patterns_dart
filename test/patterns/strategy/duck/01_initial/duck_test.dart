@@ -1,7 +1,7 @@
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/01_initial/duck.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/01_initial/mallard_duck.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/01_initial/redhead_duck.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/01_initial/rubber_duck.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/01_initial/duck.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/01_initial/mallard_duck.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/01_initial/redhead_duck.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/01_initial/rubber_duck.dart';
 import 'package:test/test.dart';
 
 void main() {

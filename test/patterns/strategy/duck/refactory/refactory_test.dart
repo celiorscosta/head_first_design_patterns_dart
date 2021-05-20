@@ -1,13 +1,12 @@
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/behavior/fly_no_way.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/behavior/fly_rocket_powered.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/behavior/squeak.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/ducks/model_duck.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/ducks/redhead_duck.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/interfaces/duck.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/behavior/fly_with_wings.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/ducks/mallard_duck.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/strategy/refactory/behavior/quack.dart';
 import 'package:test/test.dart';
+
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/refactory/behavior/fly_no_way.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/refactory/behavior/fly_rocket_powered.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/refactory/behavior/quack.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/refactory/ducks/mallard_duck.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/refactory/ducks/model_duck.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/refactory/ducks/redhead_duck.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/refactory/interfaces/duck.dart';
 
 void main() {
   setUp(() {});
