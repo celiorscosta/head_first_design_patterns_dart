@@ -7,5 +7,5 @@ abstract class Duck {
     return 'swim';
   }
 
-  String display() {}
+  String display();
 }

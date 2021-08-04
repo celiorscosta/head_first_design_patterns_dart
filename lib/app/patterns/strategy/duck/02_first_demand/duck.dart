@@ -11,5 +11,5 @@ abstract class Duck {
     return 'fly';
   }
 
-  String display() {}
+  String display();
 }

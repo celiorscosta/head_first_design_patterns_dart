@@ -2,8 +2,8 @@ import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/refac
 import 'package:head_first_design_patterns_dart/app/patterns/strategy/duck/refactory/interfaces/quack_behavior.dart';
 
 abstract class Duck {
-  FlyBehavior flyBehavior;
-  QuackBehavior quackBehavior;
+  late FlyBehavior flyBehavior;
+  late QuackBehavior quackBehavior;
 
   void setFlyBehavior(FlyBehavior fb) {
     flyBehavior = fb;
