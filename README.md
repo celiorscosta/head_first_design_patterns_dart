@@ -1,5 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+Estudo de Padrões de Projetos em Dart seguindo os exemplos do Livro "Use a Cabeça Padrões de Projetos".
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+Study of Design Patterns in Dart following the examples of the Book "Head First Design Patterns: A Brain-Friendly Guide".
