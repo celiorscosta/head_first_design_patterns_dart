@@ -1,6 +1,3 @@
-import 'dart:ffi';
-import 'dart:html';
-
 import 'package:head_first_design_patterns_dart/app/patterns/observer/interfaces/observer.dart';
 import 'package:head_first_design_patterns_dart/app/patterns/observer/interfaces/subject.dart';
 
@@ -33,5 +30,17 @@ class WeatherData implements Subject {
       Observer observer = _observers[i];
       observer.update(_temperature, _humidity, _pressure);
     }
+  }
+
+  void measurementsChanged() {
+    notifyObservers();
+  }
+
+  void setMeasurements(double temperature, double humidity, double pressure) {
+    _temperature = temperature;
+    _humidity = humidity;
+    _pressure = pressure;
+
+    measurementsChanged();
   }
 }
