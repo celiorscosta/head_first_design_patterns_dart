@@ -28,7 +28,11 @@ class WeatherData implements Subject {
   void notifyObservers() {
     for (var i = 0; i < _observers.length; i++) {
       Observer observer = _observers[i];
-      observer.update(_temperature, _humidity, _pressure);
+      observer.update(
+        temperature: _temperature,
+        humidity: _humidity,
+        pressure: _pressure,
+      );
     }
   }
 
