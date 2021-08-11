@@ -24,6 +24,7 @@ class CurrentConditionsDisplay implements Observer, DisplayElement {
 
   @override
   void display() {
-    // TODO: implement display
+    print(
+        'Current conditions: $_temperature F degrees and $_humidity % humidity');
   }
 }
