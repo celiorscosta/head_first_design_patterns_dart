@@ -1,5 +1,5 @@
-import 'package:head_first_design_patterns_dart/app/patterns/observer/interfaces/observer.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/observer/interfaces/subject.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/observer/weatherData/interfaces/observer.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/observer/weatherData/interfaces/subject.dart';
 
 class WeatherData implements Subject {
   late List _observers;
