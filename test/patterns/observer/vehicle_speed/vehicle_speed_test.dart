@@ -1,5 +1,5 @@
-import 'package:head_first_design_patterns_dart/app/patterns/observer/vehicle_speed/implements/current_speed_data.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/observer/vehicle_speed/implements/speed_data.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/observer/vehicle_speed/implementations/current_speed_data.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/observer/vehicle_speed/implementations/speed_data.dart';
 import 'package:test/test.dart';
 
 void main() {

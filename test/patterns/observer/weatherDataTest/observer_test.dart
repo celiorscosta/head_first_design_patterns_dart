@@ -1,5 +1,5 @@
-import 'package:head_first_design_patterns_dart/app/patterns/observer/weatherData/implements/currentConditionsDisplay.dart';
-import 'package:head_first_design_patterns_dart/app/patterns/observer/weatherData/implements/weatherData.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/observer/weatherData/implementations/currentConditionsDisplay.dart';
+import 'package:head_first_design_patterns_dart/app/patterns/observer/weatherData/implementations/weatherData.dart';
 import 'package:test/test.dart';
 
 void main() {
