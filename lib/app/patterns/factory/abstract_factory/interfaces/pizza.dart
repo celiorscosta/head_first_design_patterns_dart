@@ -2,14 +2,14 @@ abstract class Pizza {
   late String _name;
   Dough dough;
   Sauce sauce;
-  Veggies veggies[];
+  List<Veggies> veggies;
   Cheese cheese;
   Pepperoni pepperoni;
   Clam clam;
 
   void prepare();
 
-   void bake() {
+  void bake() {
     print('Bake for 25 minutes at 350');
   }
 
@@ -21,15 +21,15 @@ abstract class Pizza {
     print('Place pizza in official PizzaStore box');
   }
 
-  void setName(String name){
-    this._name = name;
+  void setName(String name) {
+    _name = name;
   }
 
-  String getName(){
+  String getName() {
     return _name;
   }
 
-   String toString(){
-     return '';
-   }
+  String toString() {
+    return '';
+  }
 }
