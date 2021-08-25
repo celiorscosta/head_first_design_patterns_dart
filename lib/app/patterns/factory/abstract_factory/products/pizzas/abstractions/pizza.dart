@@ -1,11 +1,13 @@
+import 'package:head_first_design_patterns_dart/app/patterns/factory/abstract_factory/products/ingredients/abstractions/exports.dart';
+
 abstract class Pizza {
   late String _name;
-  Dough dough;
-  Sauce sauce;
-  List<Veggies> veggies;
-  Cheese cheese;
-  Pepperoni pepperoni;
-  Clam clam;
+  late Dough dough;
+  late Sauce sauce;
+  late List<Veggies> veggies;
+  late Cheese cheese;
+  late Pepperoni pepperoni;
+  late Clams clam;
 
   void prepare();
 
