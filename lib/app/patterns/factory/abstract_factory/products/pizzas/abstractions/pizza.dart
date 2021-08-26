@@ -1,7 +1,7 @@
 import 'package:head_first_design_patterns_dart/app/patterns/factory/abstract_factory/products/ingredients/abstractions/exports.dart';
 
 abstract class Pizza {
-  late String _name;
+  late String name;
   late Dough dough;
   late Sauce sauce;
   late List<Veggies> veggies;
@@ -21,17 +21,5 @@ abstract class Pizza {
 
   void box() {
     print('Place pizza in official PizzaStore box');
-  }
-
-  void setName(String name) {
-    _name = name;
-  }
-
-  String getName() {
-    return _name;
-  }
-
-  String toString() {
-    return '';
   }
 }

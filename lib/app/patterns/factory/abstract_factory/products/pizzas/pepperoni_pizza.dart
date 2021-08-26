@@ -7,11 +7,20 @@ class PepperoniPizza extends Pizza {
 
   @override
   void prepare() {
-    print('Preparing $getName()');
+    print('Preparing $name');
     dough = ingredientFactory.createDough();
+    print(dough.ingredientsToString());
     sauce = ingredientFactory.createSauce();
+    print(sauce.ingredientsToString());
     cheese = ingredientFactory.createCheese();
+    print(cheese.ingredientsToString());
     veggies = ingredientFactory.createVeggies();
+    veggies.forEach(
+      (element) => print(
+        'Add veggie: ${element.ingredientsToString()}',
+      ),
+    );
     pepperoni = ingredientFactory.createPepperoni();
+    print(pepperoni.ingredientsToString());
   }
 }

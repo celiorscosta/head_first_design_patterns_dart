@@ -7,10 +7,14 @@ class ClamPizza extends Pizza {
 
   @override
   void prepare() {
-    print('Preparing $getName()');
+    print('Preparing $name');
     dough = ingredientFactory.createDough();
+    print(dough.ingredientsToString());
     sauce = ingredientFactory.createSauce();
+    print(sauce.ingredientsToString());
     cheese = ingredientFactory.createCheese();
+    print(cheese.ingredientsToString());
     clam = ingredientFactory.createClam();
+    print(clam.ingredientsToString());
   }
 }
